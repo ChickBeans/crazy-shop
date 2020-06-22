@@ -1,0 +1,139 @@
+$fontWhite: white;
+$bgcBlack: rgb(43, 40, 46);
+$baseFontSize: 16;
+
+html {
+  font-size: $baseFontSize + px;
+}
+// 1px = rem(1)
+@function rem($pixels) {
+  @return $pixels / $baseFontSize * 1rem;
+}
+
+.conten-width {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.font-xs {
+  font-size: rem(10);
+  margin-bottom: 0;
+}
+.font-sm {
+  font-size: rem(12.5);
+  margin-bottom: 0;
+}
+.font-md {
+  font-size: rem(14);
+  margin-bottom: 0;
+}
+.font-lr {
+  font-size: rem(20);
+  margin-bottom: 0;
+}
+.font-lg {
+  font-size: rem(25);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.mb-sm {
+  margin-bottom: rem(10);
+}
+.mb-md {
+  margin-bottom: rem(15);
+}
+.mb-lr {
+  margin-bottom: rem(25);
+}
+.mb-lg {
+  margin-bottom: rem(50);
+}
+
+.container {
+}
+
+.header {
+  display: fixed;
+  &__inner {
+    @extend .conten-width;
+    background-color: white;
+    height: rem(50);
+    display: flex;
+    align-items: center;
+  }
+  &--right {
+  }
+}
+
+.main {
+  // @extend .conten-width;
+  color: $fontWhite;
+  background-color: $bgcBlack;
+  padding-top: rem(50);
+}
+
+.message {
+  @extend .conten-width;
+  &__img-wrapper {
+    width: 100%;
+  }
+  &__img {
+    max-width: 100%;
+    @extend .mb-md;
+    @mixin kf-sway-img {
+      animation: (iteration-count: infinite, duration: 2s);
+    }
+  }
+  &__theme {
+    background-color: rgb(192, 168, 140);
+    border-radius: 15px;
+    box-shadow: 4px 4px 0 0 rgb(153, 88, 185);
+  }
+}
+@keyframes kf-sway-img {
+  0% {
+    transform: translate(-5%, -10%);
+    opacity: 0.8;
+  }
+  10% {
+    transform: translate(-15%, 15%);
+    opacity: 0.9;
+  }
+  20% {
+    transform: translate(-10%, -15%);
+    opacity: 0.6;
+  }
+  30% {
+    transform: translate(5%, -20%);
+    opacity: 0.4;
+  }
+  40% {
+    transform: translate(0%, 0%);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(25%, -10%);
+    opacity: 0.7;
+  }
+  60% {
+    transform: translate(-15%, -20%);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(5%, 15%);
+    opacity: 0.4;
+  }
+  80% {
+    transform: translate(20%, -10%);
+    opacity: 0.8;
+  }
+  90% {
+    transform: translate(-5%, -5%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(15%, 5%);
+    opacity: 0.1;
+  }
+}
