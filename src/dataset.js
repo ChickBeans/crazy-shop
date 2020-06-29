@@ -19,7 +19,7 @@ const defaultDataset = {
       img: bobImg,
       description: "この椅子を設置したならば気が狂い眠れないでしょう…",
       price: 9800,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -28,7 +28,7 @@ const defaultDataset = {
       img: chukyImg,
       description: "Hi Dee Hoo!呪いの挨拶が聞こえたらオワリ",
       price: 5000,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -37,7 +37,7 @@ const defaultDataset = {
       img: crazyMonkeyImg,
       description: "脱獄者発見！脱獄者発見！",
       price: 1500,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -46,7 +46,7 @@ const defaultDataset = {
       img: ghostDollImg,
       description: "これに関しては怖くも可愛くもない！",
       price: 2000,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -55,7 +55,7 @@ const defaultDataset = {
       img: nonstressBallImg,
       description: "握って爆発させてストレス発散！日本人怖い",
       price: 980,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -64,7 +64,7 @@ const defaultDataset = {
       img: pokemonImg,
       description: "超大国が産み出した恐ろしすぎるクリーチャー！お面です。",
       price: 1480,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -73,7 +73,7 @@ const defaultDataset = {
       img: sadakoDollImg,
       description: "あの貞子がいつの間にか海外進出！？",
       price: 1480,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -83,16 +83,16 @@ const defaultDataset = {
       description:
         "強力な酸を浴びて半身だけ透明になったレゴ。珍しさからお値段は少しお高め。",
       price: 1000,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
       id: 9,
-      name: "thomas",
+      name: "機関車トーマス",
       img: thomasImg,
       description: "子どもと大人で評価が分かれるおもちゃNo１！顔が怖い。",
       price: 480,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -101,7 +101,7 @@ const defaultDataset = {
       img: twinsImg,
       description: "目玉をコロコロ転がすだけのおもちゃ。",
       price: 100,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -110,7 +110,7 @@ const defaultDataset = {
       img: cuboroImg,
       description: "この木材が７万！？７万！？",
       price: 70000,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
     {
@@ -119,7 +119,7 @@ const defaultDataset = {
       img: japaneseDollImg,
       description: "伝統的な日本人形。",
       price: 12000,
-      addCart: false,
+      addedCart: false,
       cartCount: 0,
     },
   ],

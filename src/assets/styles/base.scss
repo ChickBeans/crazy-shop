@@ -1,3 +1,5 @@
+@import "./reboot.css";
+
 $fontWhite: white;
 $bgcBlack: rgb(43, 40, 46);
 $baseFontSize: 16;
@@ -8,6 +10,11 @@ html {
 // 1px = rem(1)
 @function rem($pixels) {
   @return $pixels / $baseFontSize * 1rem;
+}
+
+p, h1, h2, h3, h4, span {
+  margin: 0;
+  padding: 0;
 }
 
 .conten-width {
@@ -60,6 +67,8 @@ html {
     background-color: white;
     height: rem(50);
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
   &--right {
@@ -137,3 +146,44 @@ html {
     opacity: 0.1;
   }
 }
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  &-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    margin: 0 auto;
+    text-align: center;
+    &__inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__name {
+      @extend .font-lr;
+    }
+    &__img {
+      width: rem(300);
+      height: rem(300);
+    }
+  }
+}
+
+// .cart {
+//   position: fixed;
+//   left: 0;
+//   top: 50%;
+//   width: 100%;
+//   height: 50%;
+//   background-color: aqua;
+// }

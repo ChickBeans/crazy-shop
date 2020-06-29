@@ -13,8 +13,10 @@ const Items = (props) => {
               img={value.img}
               description={value.description}
               price={value.price}
-              addCart={value.addCart}
               cartCount={value.cartCount}
+              addCartItem={props.addCartItem}
+              incCartItem={props.incCartItem}
+              addedCart={props.addedCart}
               key={index.toString()}
              />
         )
